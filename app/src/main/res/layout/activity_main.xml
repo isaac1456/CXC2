@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout">
+
+    <EditText
+        android:id="@+id/etIdCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="Id Cliente"
+        android:inputType="number"
+        android:textColor="#000000"
+       />
+
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+
+        android:text="Buscar" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/etNombCliente"
+    android:layout_below="@+id/etIdCliente"
+    android:hint="Nombre Cliente"
+    android:enabled="false"
+    android:textColor="#000000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etResta"
+        android:layout_below="@+id/etNombCliente"
+        android:hint="Resta"
+        android:enabled="false"
+        android:textColor="#000000"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/etResta"
+    android:orientation="horizontal"
+    android:id="@+id/Ll1">
+
+    <EditText
+        android:id="@+id/etFechaPre"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Fecha"
+        android:textColor="#000000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCuota"
+        android:hint="Cuota"
+        android:enabled="false"
+        android:textColor="#000000"/>
+</LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etAbono"
+        android:layout_below="@+id/Ll1"
+        android:hint="Abono"
+        android:inputType="number"
+        android:textColor="#000000"/>
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAbono"
+        android:text="Guardar" />
+    <Button
+        android:id="@+id/btnSaldar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGuardar"
+        android:text="Saldar" />
+    <Button
+        android:id="@+id/btnNuevo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSaldar"
+        android:text="Nuevo y/o Limpiar" />
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="126dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnBuscar"
+        android:text="Estado"
+        android:textAlignment="center"
+        tools:textSize="18sp" />
+    <Button
+        android:id="@+id/btnListar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnNuevo"
+        android:text="Listar" />
+
+    <EditText
+        android:id="@+id/etfecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="61dp"
+        android:text=""/>
+
+    <EditText
+        android:id="@+id/etIdPres"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/etfecha"
+        android:layout_marginTop="-61dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
